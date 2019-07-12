@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regular Expression</title>
+</head>
+<body>
+<script>
+    function validateClassName(str) {
+        let regexp=/^[ACP][A-Za-z0-9]{4}[GHIKLM]$/;
+if(regexp.test(str)){
+    alert("this is a vaidate name");
+}else{alert("This is not vaidate name")
+}
+    }
+
+    let string1= "A1234H";
+    validateClassName(string1);
+    let string2="MH5792";
+    validateClassName(string2);
+</script>
+</body>
+</html>
